@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 from torchvision import datasets, transforms
 
 
-class ProbAIMnistDataset(Dataset):
+class MnistDataset(Dataset):
     def __init__(
         self,
         mnist_dataset: datasets.MNIST,
@@ -102,14 +102,14 @@ def test_dataloader(path: Path):
     )
 
     train_loader = torch.utils.data.DataLoader(
-        ProbAIMnistDataset(trainset, crop_noise=crop, shuffle_pairs=shuffle),
+        MnistDataset(trainset, crop_noise=crop, shuffle_pairs=shuffle),
         batch_size=batch_size,
         shuffle=True,
         drop_last=True,
     )
 
     test_loader = torch.utils.data.DataLoader(
-        ProbAIMnistDataset(testset, crop_noise=crop, shuffle_pairs=shuffle),
+        MnistDataset(testset, crop_noise=crop, shuffle_pairs=shuffle),
         batch_size=batch_size,
         drop_last=True,
     )
