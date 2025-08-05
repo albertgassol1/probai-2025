@@ -1,2 +1,7 @@
 probai/
 data/
+output/
+outputs/
+wandb/
+.vscode/
+__pycache__/
