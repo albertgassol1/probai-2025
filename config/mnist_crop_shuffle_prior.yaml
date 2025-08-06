@@ -1,0 +1,36 @@
+main:
+  device: cuda
+  save_dir: /home/albert/Documents/course_work/PAI/probai-2025/output
+  name: mnist_crop_shuffle_prior
+  epochs: 10
+  save_freq: 2
+  use_wandb: True
+  wandb_project: probai-2025
+  checkpoint_path: ""
+
+data:
+  path: /home/albert/Documents/course_work/PAI/probai-2025/data
+  crop_noise: True
+  shuffle_pairs: True
+  batch_size: 112
+  num_workers: 0
+
+model:
+  num_res_blocks: 2
+  num_channels: 128
+  num_heads: 4
+  num_head_channels: 64
+  attention_resolutions: "16"
+  dropout: 0.1
+
+optimizer:
+  lr: 2e-4
+  warmup_steps: 5000
+  max_grad_norm: 1.0
+
+ode:
+  solver: dopri5
+  ode_num_steps: 100
+
+flow:
+  matcher: conditional
