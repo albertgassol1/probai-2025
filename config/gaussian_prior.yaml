@@ -33,4 +33,4 @@ ode:
   ode_num_steps: 100
 
 flow:
-  matcher: exact
+  matcher: conditional
