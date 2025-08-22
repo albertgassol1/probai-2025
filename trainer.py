@@ -1,7 +1,7 @@
 """
-Trainer for Gaussian Prior using Conditional Flow Matching
+Trainer for MNIST Conditional Flow Matching
 This script defines a Trainer class that initializes the model, data, optimizer,
-and flow matcher for training a Gaussian Prior model on the MNIST dataset.
+and flow matcher for training a Conditional Flow Matching model on the MNIST dataset.
 It includes methods for training, evaluation, and saving checkpoints.
 This code is inspired from an example of TorchCFM library for CIFAR dataset.
 https://github.com/atong01/conditional-flow-matching/tree/1.0.5/examples/cifar10
@@ -344,8 +344,9 @@ def main(params: DictConfig) -> None:
     """
     Main function to run the Trainer.
     Initializes the Trainer with the provided parameters and starts the training process.
+    :param params: Configuration parameters for the Trainer, loaded from a Hydra config file.
     """
-    print("Starting Gaussian Prior Trainer...")
+    print("Starting Trainer...")
     print(f"Configuration: {params}")
     trainer = Trainer(params)
     trainer.train()
