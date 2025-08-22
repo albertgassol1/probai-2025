@@ -10,7 +10,7 @@ This repository implements conditional flow matching in the MNIST dataset for th
 
 ## Installation
 
-To set up the environment and install dependencies:
+To set up the environment and install dependencies (tested on python 3.8.10):
 
 ```bash
 python -m venv probai
