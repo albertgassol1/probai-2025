@@ -5,7 +5,7 @@
 This repository implements conditional flow matching in the MNIST dataset for the ProbAI 2025 summer school. Specifically, it covers three configurations:
 
 - Gaussian source distribution.
-- MNIST digit with crop noise, matched with random target digit.
+- MNIST digit with crop noise, matched with a random target digit.
 - MNIST digit with crop noise, matched with its unaltered version.
 
 ## Installation
@@ -29,12 +29,12 @@ python dataloader/download_mnist.py --data_path <directory where you want to sto
 ```
 
 ## Trained models
-Train models for the three configuraions can be downloaded [here](https://studntnu-my.sharepoint.com/:f:/g/personal/albertgp_ntnu_no/EueDQLvfRitEq4IUNHmRMkcBdtCwKy5iE000XSVcgPwYGw?e=84lNU8).
+Traines models for the three configurations can be downloaded [here](https://studntnu-my.sharepoint.com/:f:/g/personal/albertgp_ntnu_no/EueDQLvfRitEq4IUNHmRMkcBdtCwKy5iE000XSVcgPwYGw?e=84lNU8).
 
 
 ## Train
 
-A single trainer script is used to train all the configurations. First, specify the parameters and hyperparameters in the [yaml config files](./config/). It is important to specify the output path, data path, checkpoint parh (if resuming training), and wether you want to use W&B logging.
+A single trainer script is used to train all the configurations. First, specify the parameters and hyperparameters in the [yaml config files](./config/). It is important to specify the output path, data path, checkpoint path (if resuming training), and whether you want to use W&B logging.
 
  Then run the following commands.
 
