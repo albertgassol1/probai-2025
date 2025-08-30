@@ -29,7 +29,7 @@ python dataloader/download_mnist.py --data_path <directory where you want to sto
 ```
 
 ## Trained models
-Traines models for the three configurations can be downloaded [here](https://studntnu-my.sharepoint.com/:f:/g/personal/albertgp_ntnu_no/EueDQLvfRitEq4IUNHmRMkcBdtCwKy5iE000XSVcgPwYGw?e=84lNU8).
+Trained models for the three configurations can be downloaded [here](https://studntnu-my.sharepoint.com/:f:/g/personal/albertgp_ntnu_no/EueDQLvfRitEq4IUNHmRMkcBdtCwKy5iE000XSVcgPwYGw?e=84lNU8).
 
 
 ## Train
